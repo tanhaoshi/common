@@ -1,0 +1,2 @@
+rootProject.name='common'
+include ':app', ':calendarlibrary', ':kprogresshud', ':spinnerlibrary', ':takephotolibrary', ':android-pdf-viewer'

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.tanhaoshi'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+    }
+}
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+        }
+    }
+}
+
+dependencies {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+    }
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+}
